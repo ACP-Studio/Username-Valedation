@@ -1,2 +1,21 @@
-# Username-Valedation
-A C++ project that validates user names. It checks that the input is not empty, contains only letters and spaces, and is not just spaces.   This project is designed to practice input handling, validation, and class usage in C++.ducational example for learning input handling, validation, and class usage in C++.
+# برنامج التحقق من اسم المستخدم 👤
+
+## 🚀 طريقة عمل البرنامج
+1. يطلب من المستخدم إدخال الاسم.
+2. يتحقق من الشروط التالية:
+   - الاسم غير فارغ.
+   - يحتوي على حروف فقط (A-Z أو a-z).
+   - يمكن أن يحتوي على مسافات بين الكلمات.
+   - لا يحتوي على أرقام أو رموز خاصة.
+   - لا يكون كله مسافات فقط.
+3. إذا لم تتحقق الشروط، يعرض رسالة خطأ ويطلب إعادة الإدخال.
+4. إذا كان صحيحًا → يطبع رسالة ترحيب مثل:
+HI MR "Ahmed Ali"
+
+كتابة تعليمات برمجية
+
+## 🧑‍💻 مثال تشغيل
+Enter your name : 1234
+Your name can contain Letters or spaces only
+Enter your name : Ahmed Ali
+HI MR "Ahmed Ali"
