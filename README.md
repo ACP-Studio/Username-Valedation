@@ -15,6 +15,7 @@ HI MR "Ahmed Ali"
 كتابة تعليمات برمجية
 
 ## 🧑‍💻 مثال تشغيل
+<b/>
 
 Enter your name : 1234
 Your name can contain Letters or spaces only
