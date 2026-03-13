@@ -1,0 +1,67 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+class UserName
+{
+private:
+    string username; 
+
+    void setName()
+    {
+        getline(cin, username);
+    }
+
+    bool SpaceValedit()
+    {
+        bool hasLetteres = false;
+
+        for (char c : username)
+            if (isalpha(c))
+                hasLetteres = true;
+
+        return hasLetteres;
+    }
+
+    bool Valedit()
+    {
+        bool validation = true;
+
+        if (username.empty())
+            validation = false;
+
+        for (char c : username)
+        {
+            if (!isalpha(c) && !isspace(c))
+                validation = false;
+        }
+        return validation;
+    }
+
+    void mainValidationLogic()
+    {
+
+        while (!Valedit() || !SpaceValedit())
+        {
+            cout << "Your name can contain Letters or spaces only " << endl;
+            setName();
+        }
+
+        cout << "HI MR \"" << username << "\" " << endl;
+    }
+
+public:
+    void UI() // User interface
+    {
+        cout << "Enter your name : ";
+        setName();
+        mainValidationLogic();
+    }
+};
+
+int main()
+{
+    UserName ob1;
+    ob1.UI();
+}
